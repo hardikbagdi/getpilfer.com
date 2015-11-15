@@ -2405,8 +2405,8 @@
 			}
 
 			.icon.alt:before {
-				color: #1c1d26 !important;
-				text-shadow: 1px 0 0 #ffffff, -1px 0 0 #ffffff, 0 1px 0 #ffffff, 0 -1px 0 #ffffff;
+				color: #000 !important;
+				/*text-shadow: 1px 0 0 #ffffff, -1px 0 0 #ffffff, 0 1px 0 #ffffff, 0 -1px 0 #ffffff; */
 			}
 
 		.icon.major {
@@ -2439,8 +2439,8 @@
 				}
 
 				.icon.major.alt:before {
-					color: #272833 !important;
-					text-shadow: 1px 0 0 #ffffff, -1px 0 0 #ffffff, 0 1px 0 #ffffff, 0 -1px 0 #ffffff;
+					color: #fff !important;
+					
 				}
 
 /* Image */
@@ -2734,8 +2734,8 @@
 		input[type="button"]:active,
 		.button:hover,
 		.button:active {
-			box-shadow: inset 0 0 0 1px #e44c65;
-			color: #e44c65 !important;
+			box-shadow: inset 0 0 0 1px #4183D7;
+			color: #4183D7 !important;
 		}
 
 		input[type="submit"]:active,
@@ -2964,8 +2964,7 @@
 			-webkit-transition: -webkit-transform 1s ease, opacity 1s ease;
 			-ms-transition: -ms-transform 1s ease, opacity 1s ease;
 			transition: transform 1s ease, opacity 1s ease;
-			background: rgba(23, 24, 32, 0.95);
-			border-style: solid;
+			background: #000;
 			opacity: 1;
 			position: absolute;
 		}
@@ -2988,12 +2987,12 @@
 
 		.spotlight.top .content, .spotlight.bottom .content {
 			left: 0;
-			padding: 5.1em 0 3.1em 0;
+			padding: 1.0em 0 1.0em 0;
 			width: 100%;
 		}
 
 		.spotlight.top .content {
-			border-bottom-width: 0.35em;
+			border-bottom-width: 0.00em;
 			top: 0;
 		}
 
