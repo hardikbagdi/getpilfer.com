@@ -3613,7 +3613,7 @@
 		display: none;
 	}
 
-	@media screen and (max-width: 10px) {
+	@media screen and (max-width: 736px) {
 
 		/* Basic */
 
@@ -3732,7 +3732,7 @@
 				-ms-transition: -ms-transform 0.5s ease;
 				transition: transform 0.5s ease;
 				padding-bottom: 1px;
-				padding-top: 44px !important;
+				/*padding-top: 44px !important; */
 			}
 
 			#titleBar {
@@ -3744,7 +3744,7 @@
 				-webkit-transition: -webkit-transform 0.5s ease;
 				-ms-transition: -ms-transform 0.5s ease;
 				transition: transform 0.5s ease;
-				display: block;
+				/*display: block; */
 				height: 44px;
 				left: 0;
 				position: fixed;
