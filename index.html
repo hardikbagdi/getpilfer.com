@@ -8,8 +8,10 @@
 	<head>
 		<title>Pilfer for Google Photos</title>
 		<meta charset="utf-8" />
+
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/padmhilbbmmioobcfgfkdicbndgfcnae">
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="apple-touch-icon" sizes="57x57" href="icons/apple-icon-57x57.png">
 		<link rel="apple-touch-icon" sizes="60x60" href="icons/apple-icon-60x60.png">
@@ -31,6 +33,11 @@
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 	</head>
+	<script>
+	if (chrome.app.isInstalled) {
+	  document.getElementById('install-button-myapp').style.display = 'none';
+	}
+	</script>
 	<body class="landing">
 		<div id="page-wrapper">
 
@@ -44,7 +51,7 @@
 							<h2 style="font-weight:600;">Pilfer</h2>
 							<p style="font-weight:300;">Love using the Google Photos App?<br />
 							Two-click* save extension for Chrome<br></p>
-							<a href="#" class="button small icon fa fa-chrome" style="z-index:100;">Add to Chrome</a>
+							<button onclick="chrome.webstore.install()" id ="install-button-myapp" class="button small icon fa fa-chrome" style="z-index:100;">Add to Chrome</button>
 							<br> *why two? Cause 1-click always turns out to be a fag.
 						</header>
 					</div>
