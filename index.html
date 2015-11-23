@@ -34,11 +34,15 @@
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 	</head>
 	<script>
-	if (chrome.app.isInstalled) {
+	function myFunction() {
+		if (chrome.app.isInstalled) {
+		// alert("qwe");
 	  document.getElementById('install-button-myapp').style.display = 'none';
+	}// body...
 	}
+	
 	</script>
-	<body class="landing">
+	<body class="landing" onload="myFunction()">
 		<div id="page-wrapper">
 
 			<!-- Header -->
